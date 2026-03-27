@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import TaskForm from "../components/TaskForm.jsx";
 import TaskList from "../components/TaskList.jsx";
 
-const WorkflowPage = ({ tasks, addTask, updateStatus }) => {
+const WorkFlowPage = ({ tasks, addTask, updateStatus }) => {
   const { status } = useParams();
   const filteredTasks = tasks.filter(task => task.status === status);
 
@@ -18,4 +18,4 @@ const WorkflowPage = ({ tasks, addTask, updateStatus }) => {
   );
 };
 
-export default WorkflowPage;
+export default WorkFlowPage;

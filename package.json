@@ -1,8 +1,9 @@
-"homepage": "https://harshithaguntikovila.github.io/final_project",
+
 {
   "name": "final-project",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://harshithaguntikovila.github.io/final_project",
   "type": "module",
   "scripts": {
   "dev": "vite",

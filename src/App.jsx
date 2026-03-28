@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Home from "./pages/Home.jsx";
-import WorkFlowPage from "./pages/WorkFlowPage.jsx";
 import Dashboard from "./components/Dashboard.jsx";
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/SignUp.jsx";
+import WorkFlowPage from "./pages/WorkFlowPage.jsx";
 
 
 const App = () => {
@@ -74,7 +74,7 @@ const App = () => {
           path="/workflow/:status"
           element={
             isAuthenticated ? (
-              <WorkflowPage
+              <WorkFlowPage
                 tasks={tasks}
                 addTask={addTask}
                 updateStatus={updateStatus}

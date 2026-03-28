@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Home from "./pages/Home.jsx";
-import WorkflowPage from "./pages/WorkflowPage.jsx";
+import WorkFlowPage from "./pages/WorkFlowPage.jsx";
 import Dashboard from "./components/Dashboard.jsx";
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/SignUp.jsx";
@@ -10,7 +10,6 @@ import Signup from "./pages/SignUp.jsx";
 
 const App = () => {
 
-  // ✅ Load tasks from localStorage
   const [tasks, setTasks] = useState(() => {
     const savedTasks = localStorage.getItem("tasks");
     return savedTasks ? JSON.parse(savedTasks) : [];
@@ -22,7 +21,6 @@ const App = () => {
     localStorage.getItem("auth") === "true"
   );
 
-  // ✅ Save tasks whenever tasks change
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
